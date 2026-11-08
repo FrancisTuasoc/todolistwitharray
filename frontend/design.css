@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #f5f5f5;  
+}
+
+header{
+  margin: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+section{
+  display: flex;
+  margin-left: 80px;
+  margin-right: 80px;
+  gap: 50px;
+}
+
+.list-grid{
+  flex: 3.5;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 20px;
+  background-color: #ffffff;
+  gap: 40px;
+}
+
+hr{
+  border: 1px solid black;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  font-weight: bold;
+}
+
+button{
+  padding: 5px;
+  border-radius: 8px;
+  width: 50%;
+  font-weight: bold;
+  border: none;
+}
+
+.input-grid{
+  flex: 1.5;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 30px;
+  background-color: white;
+  height: 25%;
+}
+
+input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#addButton{
+  margin-left: 40%;
+  width: 20%;
+  color: white;
+  background-color: black;
+}
+
+#updButton{
+  margin-left: 40%;
+  width: 20%;
+  color: white;
+  background-color: black;
+}
+
+#btnDiv{
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+#div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+#txt{
+  flex: 2.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40%;
+}
+
+
+@media (max-width: 480px) {
+  section {
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    gap: 16px;
+    min-width: 0;
+  }
+  #div{
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    gap: 16px;
+    min-width: 0;
+    width: 100%;
+  }
+  #li{
+    text-align: center;
+    margin-right: 16px;
+    gap: 16px;
+    min-width: 0;
+    width: 100%;
+  }
+  #txt{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 16px;
+    gap: 16px;
+    min-width: 0;
+    width: 100%;
+  }
+  header{
+    font-size: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #btnDiv{
+    margin-left: 16px;
+    margin-right: 16px;
+    gap: 16px;
+    min-width: 0;
+  }
+}
